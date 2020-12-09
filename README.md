@@ -1,3 +1,13 @@
+# Introduçao ao Angular 
+
+**Curso Angular completo**
+
+**_Desenlvolvido:_** _Carlos Rodrigo_
+
+**_Plataforma_** _Workover, loiane.training._
+
+**_Professor:_** _Loiane Groner_
+
 # DataBinding
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
