@@ -1,5 +1,5 @@
 <section class="property-binding">
-  <!-- <article>
+  <article>
     <h3>Interpolation / Interpolação</h3>
      <p>String renderizada com interpolação: {{ url }}</p>
      <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
@@ -44,8 +44,8 @@
         [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
        Esse texto somente aparece em caso de erro.</div>
 
-     </div> -->
-  <!-- </article> -->
+     </div>
+  </article>
  <article>
     <h3>Event binding</h3>
     <div>
@@ -59,7 +59,7 @@
         (keyup)="onKeyUp($event)"
         (keyup.enter)="salvarValor(campoInput.value)"
         (blur)="salvarValor(campoInput.value)"
-        #campoInput />
+        #campoInput >
 
        <p>Valor atual: {{ valorAtual }}</p>
        <p>Valor salvo: {{ valorSalvo }}</p>
@@ -74,5 +74,5 @@
         </span>
     </div>
  </article>
-
 </section>
+<app-meu-form></app-meu-form>
