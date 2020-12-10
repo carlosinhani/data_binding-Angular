@@ -1,6 +1,6 @@
 <section class="property-binding">
-  <article>
-     <h3>Interpolation / Interpolação</h3>
+  <!-- <article>
+    <h3>Interpolation / Interpolação</h3>
      <p>String renderizada com interpolação: {{ url }}</p>
      <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
      <p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor()}}</p>
@@ -44,7 +44,35 @@
         [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'">
        Esse texto somente aparece em caso de erro.</div>
 
-     </div>
-  </article>
+     </div> -->
+  <!-- </article> -->
+ <article>
+    <h3>Event binding</h3>
+    <div>
+      <button (click)="botaoClicado()" class="btn btn-primary">
+        Me clique!
+      </button>
+
+      <br><br>
+
+      <input type="text"
+        (keyup)="onKeyUp($event)"
+        (keyup.enter)="salvarValor(campoInput.value)"
+        (blur)="salvarValor(campoInput.value)"
+        #campoInput />
+
+       <p>Valor atual: {{ valorAtual }}</p>
+       <p>Valor salvo: {{ valorSalvo }}</p>
+
+       <br>
+       <span
+        (mouseover)="onMouseOverOut()"
+        (mouseout)="onMouseOverOut()"
+        [class.highlight]="isMouseOver"
+       >
+         Passe o mouse sobre mim
+        </span>
+    </div>
+ </article>
 
 </section>
